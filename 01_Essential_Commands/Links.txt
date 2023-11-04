@@ -1,5 +1,9 @@
 https://www.vagrantup.com/
 
+https://developer.hashicorp.com/vagrant/docs/installation
+
 https://www.virtualbox.org/
 
-https://github.com/tomwechsler/Ubuntu_Linux_Administration
+https://github.com/tomwechsler/lfcs
+
+https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
