@@ -1,4 +1,8 @@
+sudo apt-cache search ansible -f | less
+
 sudo apt-add-repository --yes --update ppa:ansible/ansible
+
+sudo apt update
 
 sudo apt install ansible 
 
