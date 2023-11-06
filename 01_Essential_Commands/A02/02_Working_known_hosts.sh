@@ -47,7 +47,7 @@ exit
 vagrant destroy ubuntu2
 vagrant up ubuntu2
 
-#Back on Ubuntu
+#Back on Ubuntu1
 ssh 192.168.56.102
 
 #Change the config
