@@ -21,3 +21,6 @@ cd -
 
 #Recall previous command
 CTRL + r
+
+#Last commands starts with l
+!l
