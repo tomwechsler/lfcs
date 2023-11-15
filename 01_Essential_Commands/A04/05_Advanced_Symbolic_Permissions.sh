@@ -18,7 +18,3 @@ ls -l another_newfile
 chmod -v +x another_newfile
 
 chmod -v a+x another_newfile
-
-
-
-

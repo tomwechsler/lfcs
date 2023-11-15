@@ -26,7 +26,3 @@ cat new_file
 chmod -v o= new_file
 
 chmod -v g-w new_file
-
-
-
-
