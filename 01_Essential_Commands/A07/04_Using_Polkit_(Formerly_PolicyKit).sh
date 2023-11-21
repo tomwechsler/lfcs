@@ -1,11 +1,16 @@
+#Display the manual page for the 'polkit' command
 man polkit
 
+#Use 'sudo' to display the contents of the '51-ubuntu-admin.conf' file in the '/etc/polkit-1/localauthority.conf.d' directory
 sudo cat /etc/polkit-1/localauthority.conf.d/51-ubuntu-admin.conf
 
+#Print the user and group IDs for the current user
 id
 
+#Use 'sudo' to add the 'vagrant' user to the 'sudo' group
 sudo usermod -aG sudo vagrant
 
+#Print the user and group IDs for the current user
 id
 
 exit
