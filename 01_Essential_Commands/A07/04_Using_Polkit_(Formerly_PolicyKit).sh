@@ -34,5 +34,3 @@ pkttyagent -p <bash pid>
 pkexec visudo
 
 #Switch to the new session and choose the account/password
-
-
