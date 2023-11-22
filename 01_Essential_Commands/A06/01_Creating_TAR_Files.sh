@@ -7,7 +7,7 @@ sudo tar -cf etc.tar /etc
 #What about the size
 ls -lh etc.tar 
 
-#-f for list
+#-t for list
 tar -tf etc.tar
 
 #-x for extract

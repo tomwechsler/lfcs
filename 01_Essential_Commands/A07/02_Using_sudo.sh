@@ -39,5 +39,3 @@ sudo -k
 
 #List the commands the current user can execute as root using 'sudo'
 sudo -l
-
-

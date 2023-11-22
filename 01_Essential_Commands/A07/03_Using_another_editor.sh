@@ -12,6 +12,3 @@ Defaults env_keep += "EDITOR"
 
 #Use 'sudo' to edit the 'sudoers' file again, this time using 'vim' as the editor because of the 'EDITOR' environment variable
 sudo visudo
-
-
-
