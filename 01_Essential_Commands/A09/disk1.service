@@ -1,5 +1,5 @@
 [Unit]
-Description=Set up loop device
+Description=Loop device
 After=local-fs.target
 
 [Service]

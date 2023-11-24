@@ -29,3 +29,6 @@ sudo reboot
 
 #List all block devices after reboot to confirm the service is running
 lsblk
+
+#Cat the disk1.service unit file
+systemctl cat disk1.service
