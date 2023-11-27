@@ -7,7 +7,7 @@ sudo apt update
 sudo apt install -y openssl
 
 #Generate a new private key using RSA algorithm
-openssl genkey -algorithm RSA -out private.key
+openssl genpkey -algorithm RSA -out private.key
 
 #Generate a new Certificate Signing Request (CSR) using the private key (Common Name should be set to www.example.com)
 openssl req -new -key private.key -out csr.pem #(Common Name:www.example.com)
