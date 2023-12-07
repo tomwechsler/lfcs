@@ -6,5 +6,3 @@ echo "We are maintaining your Linux System" | sudo tee /etc/nologin
 
 #A reboot removes the /etc/nologin file
 sudo shutdown -r now
-
-

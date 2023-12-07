@@ -25,5 +25,3 @@ ls /run
 
 #Shut's the system down
 sudo shutdown -h now
-
-
