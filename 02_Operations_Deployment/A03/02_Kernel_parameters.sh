@@ -1,3 +1,7 @@
+#Woking on ubuntu1
+
+#Interrupt the boot process at the GRUB menu
+
 init=/bin/bash
 
 passwd
