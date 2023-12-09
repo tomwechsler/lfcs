@@ -1,6 +1,5 @@
 #Working on ubuntu1
 
-
 #List the details of the 'pkgcache.bin' file in the '/var/cache/apt' directory. This file is a package metadata cache used by 'apt'.
 ls -l /var/cache/apt/pkgcache.bin
 
