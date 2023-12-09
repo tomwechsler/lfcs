@@ -10,16 +10,16 @@ apt-cache search apache
 apt-cache search apache | wc -l
 
 #Search for packages whose names contain 'apache'
-apt search --names-only apache
+apt-cache search --names-only apache
 
 #Count the number of packages whose names contain 'apache'
-apt search --names-only apache | wc -l
+apt-cache search --names-only apache | wc -l
 
 #Count the number of packages whose names start with 'apache'
-apt search --names-only '^apache' | wc -l
+aapt-cache search --names-only '^apache' | wc -l
 
 #List the packages whose names start with 'apache'
-apt search --names-only '^apache'
+apt-cache search --names-only '^apache'
 
 #Show detailed information about the 'apache2' package
 apt show apache2

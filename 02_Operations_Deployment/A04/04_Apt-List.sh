@@ -1,6 +1,5 @@
 #Working on unbuntu1
 
-
 #List all available packages
 apt list
 
