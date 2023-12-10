@@ -1,3 +1,5 @@
+#Working on unbuntu1
+
 sudo journalctl
 
 sudo journalctl --unit ssh
@@ -13,5 +15,3 @@ sudo sed -i 's/#Storage=auto/Storage=persistent/' /etc/systemd/journald.conf
 grep -i storage /etc/systemd/journald.conf
 
 sudo systemctl restart systemd-journald
-
-
