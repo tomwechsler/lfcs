@@ -55,6 +55,3 @@ systemctl edit cron --full
 systemctl daemon-reload
 
 systemctl status cron
-
-
-
