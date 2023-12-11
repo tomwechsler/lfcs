@@ -61,5 +61,3 @@ vagrant ssh ubuntu1
 
 #List all block devices again
 lsblk
-
-
