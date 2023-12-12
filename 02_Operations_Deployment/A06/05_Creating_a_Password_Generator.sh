@@ -13,5 +13,3 @@ done
 
 
 chmod -v a+x pwgen.sh
-
-
