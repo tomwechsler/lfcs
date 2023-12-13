@@ -2,6 +2,8 @@
 
 mkdir ~/shellscripting
 
+cd ~/shellscripting
+
 vim info.sh
 echo "=================="
 hostname
