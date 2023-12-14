@@ -1,6 +1,6 @@
 mkdir links
 
-ld -ld links/
+ls -ld links/
 
 ls -ldi links/
 
