@@ -1,5 +1,5 @@
 for user in joe sam pete ; do 
-sudo useradd -m -s /bin/bash -p $(pwgenim.sh Password123?) $user 
+sudo useradd -m -s /bin/bash -p $(pwgen.sh Password123?) $user 
 done
 
 tail -n3 /etc/passwd
