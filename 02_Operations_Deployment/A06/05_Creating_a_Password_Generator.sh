@@ -1,3 +1,8 @@
+#Working on unbuntu1
+
+#Create a new file called 'pwgen.sh' in the current directory
+vim pwgen.sh
+
 #!/bin/bash
 PWD_OK="false"
 while [ "$PWD_OK" != "true" ] ; do
@@ -11,5 +16,8 @@ while [ "$PWD_OK" != "true" ] ; do
   fi
 done
 
-
+#Change the permissions of the 'pwgen.sh'
 chmod -v a+x pwgen.sh
+
+#Execute the 'pwgen.sh' script
+./pwgen.sh

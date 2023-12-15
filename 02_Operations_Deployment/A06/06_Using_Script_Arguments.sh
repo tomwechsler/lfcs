@@ -4,6 +4,3 @@ if [[ $# -ne 1 ]] ; then
 else
   REPLY=$1
 fi
-
-
-
