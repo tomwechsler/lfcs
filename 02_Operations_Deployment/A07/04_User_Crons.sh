@@ -1,8 +1,15 @@
+#Working on unbuntu1
+
+#List the cron jobs for the current user
 crontab -l
 
+#Create a user cron job
 crontab -e
-* * * * * date >> /tmp/date
 
+#This cron job will run every minute and append the current date to the '/tmp/date' file.
+* * * * * date >> /tmp/date 
+
+#Follow the system log
 sudo journalctl -f
 
 #Remove the crontab file
@@ -11,6 +18,5 @@ crontab -r
 #By the way did our backup work?
 sudo ls /root
 
+#Did our cron job work?
 sudo ls /tmp
-
-
