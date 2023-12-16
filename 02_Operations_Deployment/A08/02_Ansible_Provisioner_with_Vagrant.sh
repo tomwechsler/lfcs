@@ -9,6 +9,3 @@
           devnode "^sd[a-b]" 
         }
     notify: RestartMP
-
-
-
