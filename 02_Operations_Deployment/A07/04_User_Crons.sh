@@ -15,8 +15,8 @@ sudo journalctl -f
 #Remove the crontab file
 crontab -r
 
-#By the way did our backup work?
+#By the way did our backup job work?
 sudo ls /root
 
-#Did our cron job work?
+#Did our user cron job work?
 sudo ls /tmp
