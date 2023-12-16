@@ -9,6 +9,8 @@ ps -lfp $(pgrep sleep)
 #Run the 'sleep 1000' command in the background with a nice value of -10
 nice -10 sleep 1000 &
 
+#Niceness values range from -20 (most favorable to the process) to 19 (least favorable to the process)
+
 #Display a long-format listing of the processes named 'sleep'
 ps -lfp $(pgrep sleep)
 
