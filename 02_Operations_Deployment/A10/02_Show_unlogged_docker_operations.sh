@@ -15,7 +15,7 @@ sudo gpasswd -a $USER docker
 
 exit
 
-vagrant ssh ubuntu
+vagrant ssh ubuntu2
 
 id
 
