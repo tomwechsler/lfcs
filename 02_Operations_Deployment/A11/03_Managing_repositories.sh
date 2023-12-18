@@ -13,10 +13,10 @@ cd /etc/yum.repos.d/
 ls
 
 #Display the content of the 'rock-extras.repo' repository configuration file
-cat rock-extras.repo
+cat rocky-extras.repo
 
 #Replace 'enabled=0' with 'enabled=1' in the 'rock-extras.repo' file to enable the repository
-sudo sed -i 's/enabled=0/enabled=1/' /etc/yum.repos.d/rock-extras.repo
+sudo sed -i 's/enabled=0/enabled=1/' /etc/yum.repos.d/rocky-extras.repo
 
 #Display the configured software repositories for DNF again to confirm the changes
 dnf repolist
