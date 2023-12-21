@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 id
 
 echo $USER
@@ -12,6 +14,8 @@ id
 
 echo $USER
 
+ps -f
+
 exit
 
 #su - or su -l are the same
@@ -23,6 +27,8 @@ pwd
 
 echo $USER
 
+ps -f
+
 useradd -m bob -s /bin/bash
 
 #Bob has no password, but root can su
@@ -33,5 +39,3 @@ pwd
 exit
 
 sudo passwd -l root
-
-

@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 cat /etc/passwd
 
 #What does the fields mean?
