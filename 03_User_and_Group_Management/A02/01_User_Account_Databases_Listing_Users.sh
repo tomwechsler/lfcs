@@ -1,5 +1,6 @@
 #Working on ubuntu1
 
+#List content of passwd file
 cat /etc/passwd
 
 #What does the fields mean?
@@ -14,8 +15,10 @@ getent  passwd
 #The users must not always be local
 grep '^passwd' /etc/nsswitch.conf
 
+#The man page for nsswitch.conf
 man nsswitch.conf
 
+#Search for the user vagrant
 getent passwd vagrant
 
 #An other search method

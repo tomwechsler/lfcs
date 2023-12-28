@@ -1,3 +1,5 @@
+#Working on ubuntu1 with 2 sessions
+
 #Open an second terminal/shell
 
 #In the first shell
@@ -13,6 +15,7 @@ sudo cat /etc/polkit-1/localauthority.conf.d/51-ubuntu-admin.conf
 #Let's brake sudo
 sudo visudo
 
+#Show the process id
 echo $$
 
 #In the second shell
@@ -26,5 +29,3 @@ enter password
 
 #Back to the first shell and undo the sudo break
 sudo visudo
-
-
