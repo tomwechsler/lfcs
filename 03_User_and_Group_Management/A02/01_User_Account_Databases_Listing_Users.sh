@@ -10,7 +10,7 @@ grep vagrant /etc/passwd
 man 5 passwd
 
 #A Database view
-getent  passwd
+getent passwd
 
 #The users must not always be local
 grep '^passwd' /etc/nsswitch.conf
