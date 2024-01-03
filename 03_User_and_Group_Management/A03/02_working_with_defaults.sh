@@ -20,8 +20,11 @@ man 5 login.defs
 sudo vim /etc/login.defs
 CREATE_HOME yes
 
+#Create a new user
 sudo useradd user3
 
+#Last command beginning with tai
 !tai
 
+#List the home directories
 ls /home

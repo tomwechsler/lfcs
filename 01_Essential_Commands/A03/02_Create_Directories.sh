@@ -6,7 +6,8 @@ mkdir -p ~/dir2/dir3
 #Create a folder structure
 mkdir -p ~/ubuntu/{14,16,18,20,22}.04/{gold,current}
 
+#Install the tree command
 sudo apt install -y tree
 
-#Install the tree command
+#Show the folder structure
 tree ubuntu
