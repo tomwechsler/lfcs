@@ -1,13 +1,21 @@
+#woking on ubuntu1
+
+#Change the password for the 'user8' user
 sudo passwd user8
 
+#Display the shadow password database entry for the 'user8' user
 sudo getent shadow user8
 
+#Lock the password for the 'user8' user
 sudo passwd -l user8
 
+#Display the shadow password database entry for the 'user8' user
 sudo getent shadow user8
 
+#Unlock the password for the 'user8' user
 sudo passwd -u user8
 
+#Display the shadow password database entry for the 'user8' user
 sudo getent shadow user8
 
 #Notice we start with a space (this line will not show in the history)
@@ -29,6 +37,5 @@ CTRL+D
 #Copy the users from above
 vim users
 
+#Use the 'chpasswd' command to set the passwords for the users in the 'users' file
 sudo chpasswd < users
-
-

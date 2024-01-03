@@ -1,3 +1,6 @@
+#woking on ubuntu1
+
+#Shows the hash value
 openssl passwd -6 P@ssw0rd
 
 #Repeat 3 times
@@ -12,5 +15,3 @@ sudo getent shadow $USER | cut -f2 -d: | awk -F$ '{ print "ALG:\t" $2 "\nSALT:\t
 openssl passwd -6 -salt aAMjsB2Ztbmyf6aE vagrant
 
 #The hash is absolutely the same
-
-
