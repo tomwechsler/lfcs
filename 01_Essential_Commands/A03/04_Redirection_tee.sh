@@ -25,7 +25,7 @@ ls -l | wc -l
 #This will not work
 sudo echo "8.8.8.8 google" >> /etc/hosts
 
-#Using the command tee, we can send output to the wcreen an too a file
+#Using the command tee, we can send output to the screen and too a file
 echo "8.8.8.8 google" | sudo tee -a /etc/hosts
 
 #This is also useful where we need to raise our privileges, standard redirection works with the right of the user that opened the shell
