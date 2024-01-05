@@ -1,4 +1,4 @@
-#woking on ubuntu1
+#Woking on ubuntu1
 
 #Display the groups the current user is a member of
 groups
@@ -14,6 +14,9 @@ id -Gn
 
 #Display the user ID, group ID, and groups the 'vagrant' user is a member of
 id vagrant
+
+#Create a group named 'mkt'
+sudo groupadd mkt
 
 #Run a new shell with the group ID set to 'mkt'
 sg mkt

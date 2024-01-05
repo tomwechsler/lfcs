@@ -1,4 +1,4 @@
-#woking on ubuntu1
+#Woking on ubuntu1
 
 #Change the password for the 'user8' user
 sudo passwd user8

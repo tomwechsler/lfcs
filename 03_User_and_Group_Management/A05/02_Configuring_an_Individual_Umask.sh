@@ -1,10 +1,13 @@
+#Woking on ubuntu1
+
+#The current umask value
 umask
 
+#Grep the umask setting in the '.profile' file
 grep '#umask' .profile
 
-sed –i '/^#umask/s/^#//' .profile ##uncomment the umask setting
+#Uncomment the umask setting
+sed -i '/^#umask/s/^#//' .profile ##uncomment the umask setting
 
-sed –i '/^umask/s/^/#/' .profile ##to comment the line
-
-
-
+#Comment the umask setting
+sed -i '/^umask/s/^/#/' .profile ##to comment the line

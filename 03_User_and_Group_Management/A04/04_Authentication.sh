@@ -1,4 +1,4 @@
-#woking on ubuntu1
+#Woking on ubuntu1
 
 #Shows the hash value
 openssl passwd -6 P@ssw0rd

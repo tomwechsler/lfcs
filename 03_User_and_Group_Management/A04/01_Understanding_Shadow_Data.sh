@@ -1,4 +1,4 @@
-#woking on ubuntu1
+#Woking on ubuntu1
 
 #Create a new user named 'user8' with home directory, login shell set to '/bin/bash'
 sudo useradd -m user8 -s /bin/bash

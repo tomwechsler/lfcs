@@ -1,4 +1,4 @@
-#woking on ubuntu1
+#Woking on ubuntu1
 
 #Display the shadow password database entry for the current user
 sudo getent shadow $USER
