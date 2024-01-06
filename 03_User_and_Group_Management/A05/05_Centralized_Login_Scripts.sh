@@ -13,7 +13,7 @@ ls -l /etc/bash.bashrc
 sudo vim /etc/profile.d/custom.sh
 
 umask 027
-alias cleanfile="grep -E -v '^(#|$'"
+alias cleanfile="grep -E -v '^(#|$)'"
 set -o noclobber
 
 #Exit the editor

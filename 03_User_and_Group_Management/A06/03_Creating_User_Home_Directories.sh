@@ -18,7 +18,8 @@ echo "session optional pam_mkhomedir.so"
 #Append the string "session optional pam_mkhomedir.so" to the end of the /etc/pam.d/common-session file
 echo "session optional pam_mkhomedir.so" | sudo tee -a /etc/pam.d/common-session
 
-#'cat ESC .' is not a valid command, it might be a typo
+#cat + ESC . (dot) to repeat the last command
+cat /etc/pam.d/common-session
 
 #Switch to the 'alf' user again
 su - alf
