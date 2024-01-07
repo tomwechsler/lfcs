@@ -12,17 +12,14 @@ getent passwd apache
 #Get the 'apache' group entry from the group database
 getent group apache
 
-#Switch to the root user and simulate a full login shell
-sudo -i
-
 #Create a new file named 'file1' in the '/var/www/html' directory
-touch /var/www/html/file1
+sudo touch /var/www/html/file1
 
 #List the permissions of the 'file1' file in the '/var/www/html' directory
-ls -l /var/www/html/file1
+sudo ls -l /var/www/html/file1
 
 #Set the default ACL for the '/var/www/html' directory to give 'apache' user read permission and deny all permissions for others
-setfacl -m d:u:apache:r,d:o:- /var/www/html
+sudo setfacl -m d:u:apache:r,d:o:- /var/www/html
 
 #List the permissions of the '/var/www/html' directory after setting the default ACL
 ls -ld /var/www/html
@@ -30,14 +27,23 @@ ls -ld /var/www/html
 #Get the ACL for the '/var/www/html' directory
 getfacl /var/www/html
 
+#Get the default ACL for the '/var/www/html' directory
+getfacl -d /var/www/html
+
 #Write "Hello from Apache" to the 'index.html' file in the '/var/www/html' directory
-echo "Hello from Apache" > /var/www/html/index.html
+echo "Hello from Apache" | sudo tee /var/www/html/index.html
+
+#List the permissions of the 'index.html' file in the '/var/www/html' directory
+ls -l /var/www/html/index.html
+
+#Permission denied
+cat /var/www/html/index.html
 
 #Get the ACL for the 'index.html' file in the '/var/www/html' directory
 getfacl /var/www/html/index.html
 
 #Start the 'httpd' service
-systemctl start httpd
+sudo systemctl start httpd
 
 #Send a GET request to the local server
 curl localhost

@@ -1,61 +1,64 @@
 #Working on the rocky system
 
 #Create a new directory named 'private' with 700 permissions
-mkdir -m 700 /private
+sudo mkdir -m 700 /private
 
-#List the contents of the '/private' directory
-ls /private
+#No permissions for 'vagrant' user to access the '/private' directory
+cd /private
 
 #List the permissions of the '/private' directory
 ls -ld /private
 
-#Leave the root shell
-exit
-
-#No permissions for 'vagrant' user to access the '/private' directory
-ls /private
-
 #Set the ACL for the '/private' directory to give 'vagrant' user read, write, and execute permissions with root privileges
 sudo setfacl -m u:vagrant:rwx /private
-
-#List the contents of the '/private' directory
-ls /private
 
 #List the permissions of the '/private' directory after setting the ACL
 ls -ld /private #Notice the '+' sign at the end of the permissions
 
-#Set the default ACL for the '/private' directory to give 'vagrant' user read, write, and execute permissions with root privileges
-sudo setfacl -m d:u:vagrant:rwx /private
+#Get the ACL for the '/private' directory
+getfacl /private #Notice the mask entry
 
-#Create a new file named 'file1' in the '/private' directory
-touch /private/file1
-
-#Get the ACL for the 'file1' file in the '/private' directory
-getfacl /private/file1
-
-#Create a new file named 'fileroot' in the '/private' directory with root privileges
-sudo touch /private/fileroot
-
-#Get the ACL for the 'fileroot' file in the '/private' directory
-getfacl /private/fileroot
-
-#Set the ACL for the '/private' directory to give 'tux' user read and execute permissions with root privileges
-sudo setfacl -m u:tux:rx /private
+#Set the permission for the group to read and write
+sudo chmod -v g=rw /private
 
 #Get the ACL for the '/private' directory
-getfacl /private
+getfacl /private #Notice the mask entry and the effective permissions
 
-#Remove the ACL for 'tux' user from the '/private' directory with root privileges
-sudo setfacl -x u:tux /private
+#Set the permission for the group to read and write
+sudo chmod -v g=rwx /private
 
-#Get the ACL for the '/private' directory after removing the ACL for 'tux' user
+#Get the ACL for the '/private' directory
+getfacl /private #Notice the mask entry and the effective permissions
+
+#Move into the '/private' directory
+cd /private
+
+#Back to the home directory
+cd
+
+#Set the ACL for the '/private' directory to give 'apache' user read and execute permissions with root privileges
+sudo setfacl -m u:apache:rx /private
+
+#Remove the ACL for 'apache' user from the '/private' directory with root privileges
+sudo setfacl -x u:apache /private
+
+#Get the ACL for the '/private' directory after removing the ACL for 'apache' user
 getfacl /private
 
 #Set the ACL for the '/private' directory to give 'wheel' group read and execute permissions with root privileges
 sudo setfacl -m g:wheel:rx /private
+#or with a oneliner
+sudo setfacl -m u:vagrant:rwx,d:u:vagrant:rwx,g:wheel:rx /private
 
 #Get the ACL for the '/private' directory
 getfacl /private
+
+#Bevor backing up the ACLs, lets copy some ACLs (working in the home directory)
+ls
+getfacl file1
+touch file2
+getfacl file1 | setfacl --set-file=- file2
+getfacl file2
 
 #Backup the ACL for the '/private' directory to the '/tmp/backupacl' file
 getfacl /private > /tmp/backupacl
@@ -82,7 +85,7 @@ sudo setfacl -b /private
 getfacl /private
 
 #Change the current directory to '/private'
-cd /private
+cd /private #Permission denied
 
 #Display the contents of the '/tmp/backupacl' file
 cat /tmp/backupacl

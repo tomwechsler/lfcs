@@ -6,17 +6,37 @@ df -hT /
 #Search for 'acl' in the boot configuration file for the current kernel version
 grep -i acl /boot/config-$(uname -r)
 
+#On the ubuntu system
+grep -i acl /boot/config-$(uname -r)
+
+#List the acl package
+apt list acl
+
+#Install the acl package
+sudo apt install acl
+
+#List the acl package
+apt list acl [installed]
+
 #List the 'acl' package using dnf package manager with root privileges
 sudo dnf list acl
 
 #Query the RPM package that provides the '/usr/bin/getfacl' file
-rpm -qf /usr/bin/getfacl
+rpm -qf /bin/getfacl
 
-#List all block devices
-lsblk
+#On ubuntu
+dpkg -S /bin/getfacl
 
-#Display file system disk space usage for '/boot' in human-readable format and include file system type
-df -hT /boot
+#Check the mount options for the root file system
+mount -t ext4
+
+#Use tune2fs
+sudo tune2fs -l /dev/sda1 | grep -i acl
+
+#On rocky
+mount -t ext4
+
+mount -t xfs #There is no acl mount option needed, xfs supports acl by default
 
 
 The control of permissions for access to directories and files originally works as follows:
