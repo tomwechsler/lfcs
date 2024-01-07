@@ -1,7 +1,7 @@
 #Working on ubuntu1
 
 #Lets remove the CREATE_HOME
-vim /etc/login.defs
+sudo vim /etc/login.defs
 
 #Create a new user named 'alf'
 sudo useradd alf
