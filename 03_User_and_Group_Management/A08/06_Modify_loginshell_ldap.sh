@@ -21,7 +21,9 @@ dsidm localhost user modify alice add:loginShell:/bin/bash
 #Display the details of the 'alice' user in the localhost 389 Directory Server instance again to confirm the changes
 dsidm localhost user get alice
 
-#Restart the sssd service
+#Reboot Ubuntu1
+
+#Restart the sssd service on Ubuntu2
 systemctl restart sssd
 
 #On Ubuntu2

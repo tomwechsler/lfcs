@@ -24,6 +24,9 @@ exit
 #Perform an LDAP search on the 'dc=example,dc=com' base DN using the 'cn=Directory Manager' DN for authentication over LDAPS again
 ldapsearch -H ldaps://ubuntu1:636 -D 'cn=Directory Manager' -W -b 'dc=example,dc=com' -x
 
+#Switch to the root user
+sudo -i
+
 #Open the .dsrc file in the vim text editor
 vim .dsrc
 
@@ -34,7 +37,7 @@ dsidm localhost user list
 dsdim localhost group list
 
 #Create a new user named 'Alice Smith' in the localhost 389 Directory Server instance
-dsidm localhost user create --uid alice --cn "Alice Smith" --uidNumber 2000 --gidNumber 100 --display-name "Alice Smith" --homeDirectory /home/alice
+dsidm localhost user create --uid alice --cn "Alice Smith" --uidNumber 2000 --gidNumber 100 --displayName "Alice Smith" --homeDirectory /home/alice
 
 #List the users in the localhost 389 Directory Server instance again to confirm the changes
 dsidm localhost user list
