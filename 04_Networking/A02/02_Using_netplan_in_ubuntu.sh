@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 #Prereqs: 2 SSH Sessions to unbuntu1 and 1 SSH Session to ubuntu2
 
 #List the IP configuration

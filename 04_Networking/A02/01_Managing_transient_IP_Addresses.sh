@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 #Check the IP
 ip address show
 
