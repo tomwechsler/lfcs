@@ -39,6 +39,3 @@ getent hosts www.cisco.com
 
 #we can still look at the host file
 getent hosts
-
-
-
