@@ -10,7 +10,7 @@ ls /etc/NetworkManager/system-connections/
 ls /etc/sysconfig/network-scripts/
 
 #Display the config file
-cat /etc/NetworkManager/system-connections/enp0s8.nmconnection
+sudo cat /etc/NetworkManager/system-connections/enp0s8.nmconnection
 
 #Check the NetworkManager status
 systemctl status NetworkManager

@@ -43,7 +43,7 @@ sudo ip netns exec net1 ip link set dev veth1 up
 sudo ip netns exec net1 ip addr show
 
 #Can we ping the veth1 interface from the rhel system?
-ip netns exec net1 ping -c 1 10.0.0.1
+sudo ip netns exec net1 ping -c 1 10.0.0.1
 
 #But not from default namespace
 ping -c 1 10.0.0.1
