@@ -1,4 +1,4 @@
-#working on ubuntu1
+#Working on ubuntu1
 
 #sysctl is used to modify kernel parameters at runtime
 sysctl -a
