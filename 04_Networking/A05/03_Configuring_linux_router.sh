@@ -1,3 +1,5 @@
+#working on ubuntu1
+
 #sysctl is used to modify kernel parameters at runtime
 sysctl -a
 
@@ -21,7 +23,3 @@ cat /proc/sys/net/ipv4/ip_forward
 
 #Another proof
 sysctl -ar ip_forward
-
-
-
-

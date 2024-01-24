@@ -1,3 +1,5 @@
+#working on ubuntu1
+
 #We start with the timedatectl command
 timedatectl
 
@@ -24,6 +26,3 @@ timedatectl timesync-status --monitor
 
 #The time sync details
 timedatectl show-timesync
-
-
-

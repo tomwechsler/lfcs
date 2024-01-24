@@ -21,7 +21,3 @@ ip route show
 
 #Can we ping ubuntu2
 ping 192.168.2.1
-
-
-
-

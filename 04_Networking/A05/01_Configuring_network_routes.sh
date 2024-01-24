@@ -27,6 +27,3 @@ sudo netplan apply
 
 #The route has been gone
 ip route show
-
-
-

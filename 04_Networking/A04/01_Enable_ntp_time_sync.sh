@@ -1,3 +1,5 @@
+#working on ubuntu1
+
 #We working with the systemd eco system and use the following command
 timedatectl
 
@@ -8,7 +10,7 @@ sudo timedatectl set-timezone 'Europe/London'
 timedatectl
 
 #We have a look at the service
-systemctl status systemd-timesyncd.service
+sudo systemctl status systemd-timesyncd.service
 
 #We can start the service with systemctl or
 sudo timedatectl set-ntp true
@@ -17,7 +19,7 @@ sudo timedatectl set-ntp true
 sudo timedatectl
 
 #What about the service
-systemctl status systemd-timesyncd.service
+sudo systemctl status systemd-timesyncd.service
 
 #To stop
 sudo timedatectl set-ntp false
@@ -29,6 +31,4 @@ sudo systemctl status systemd-timesyncd
 sudo timedatectl set-ntp true
 
 #Lets proof again
-sudo systemctl status systemd-timesyncd 
-
-
+sudo systemctl status systemd-timesyncd
