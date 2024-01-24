@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 #Lets start
 hostnamectl
 
@@ -54,5 +56,3 @@ hostnamectl
 
 #The os-release file
 cat /etc/os-release
-
-

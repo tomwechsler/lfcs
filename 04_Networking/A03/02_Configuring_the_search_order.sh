@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 #Query the host database
 getent hosts
 

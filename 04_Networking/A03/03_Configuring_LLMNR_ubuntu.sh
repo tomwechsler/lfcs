@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 #The local nameserver
 cat /etc/resolv.conf
 
@@ -17,7 +19,7 @@ resolvectl status
 #Lets change this
 sudo vim /etc/systemd/resolved.conf
 
-#Remove the # at LLMNR a set to "yes"
+#Remove the # at LLMNR and set to "yes"
 #Save and exit
 
 #Restart the service
@@ -37,7 +39,7 @@ ping ubuntu2
 #Lets change this
 sudo vim /etc/systemd/resolved.conf
 
-#Remove the # at LLMNR a set to "yes"
+#Remove the # at LLMNR and set to "yes"
 #Save and exit
 
 #Restart the service
@@ -53,7 +55,3 @@ ping -c 3 ubuntu2
 
 #The dig command
 dig ubuntu2
-
-
-
-
