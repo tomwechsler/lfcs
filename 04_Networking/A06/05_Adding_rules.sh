@@ -33,6 +33,8 @@ sudo iptables -D INPUT 3
 sudo vim /etc/iptables/rules.v4 
 
 #-A INPUT -s 192.168.56.0/24 -p tcp -m tcp --dport 80 -j ACCEPT
+#-I INPUT -p icmp -j REJECT
+#-I INPUT -p icmp -j REJECT --reject-with icmp-net-unreachable
 
 #Restore the config
 sudo iptables-restore /etc/iptables/rules.v4
@@ -43,4 +45,6 @@ sudo iptables -S
 #Back on ubuntu2
 curl 192.168.56.101
 
+ping 192.168.56.101 #Destination Port Unreachable
 
+ping 192.168.56.101 #Destination Net Unreachable (after the second firewall change)
