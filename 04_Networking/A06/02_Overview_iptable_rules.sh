@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 #Are there any rules
 sudo iptables -L
 
@@ -21,8 +23,3 @@ cat /etc/default/netfilter-persistent
 
 #The rules and counters
 cat /etc/iptables/rules.v4 
-
-
-
-
-

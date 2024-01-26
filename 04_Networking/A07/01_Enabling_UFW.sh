@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 #Check the ufw status
 sudo ufw status
 
@@ -27,6 +29,3 @@ ufw status numbered
 
 #What ufw has configured
 iptables -L
-
-
-

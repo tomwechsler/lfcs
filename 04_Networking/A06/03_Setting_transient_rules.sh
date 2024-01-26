@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 #An important info for configuring the following rules
 who
 
@@ -21,5 +23,3 @@ sudo iptables -L
 sudo iptables -nvL
 
 #Do not forget the configuration is not yet permanent!
-
-

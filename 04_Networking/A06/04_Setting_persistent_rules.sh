@@ -1,3 +1,5 @@
+#Working on ubuntu1
+
 #Clear the counters and save the config
 sudo iptables -Z && sudo iptables-save -f /etc/iptables/rules.v4 
 
@@ -24,7 +26,3 @@ sudo reboot
 
 #Is the configuration still available?
 sudo iptables -L
-
-
-
-
