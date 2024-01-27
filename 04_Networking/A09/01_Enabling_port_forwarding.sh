@@ -21,6 +21,12 @@ firewall-cmd --list-all
 #List all forward ports in the firewall
 firewall-cmd --list-forward-ports
 
+#Add a new forward port to the firewall
+firewall-cmd --add-forward-port=port=8080:proto=tcp:toaddr=192.168.56.103:toport=80
+
+#List all forward ports in the firewall
+firewall-cmd --list-forward-ports
+
 #Switch to ubuntu2
 curl 192.168.56.101:8080
 
