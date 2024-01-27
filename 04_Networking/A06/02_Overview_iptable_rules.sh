@@ -3,11 +3,14 @@
 #Are there any rules
 sudo iptables -L
 
+#The filter table
+sudo iptables -L -t filter
+
 #List the iptables package
 sudo apt list '*iptables-*' 
 
 #Install the iptables package
-sudo apt install -y iptables.persistent 
+sudo apt install -y iptables-persistent 
 
 #Infos to the iptables
 systemctl cat iptables

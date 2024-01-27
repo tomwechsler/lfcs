@@ -1,5 +1,7 @@
 #Test environment reset
 
+#working on ubuntu1
+
 #The system is listens on
 ss -ntl
 
@@ -32,4 +34,3 @@ nmap --top-port 10 -v -oG -
 nmap -oG grepable.txt 192.168.56.0/24
 
 grep "Host: 192.168.56.102" grepable.txt
-
