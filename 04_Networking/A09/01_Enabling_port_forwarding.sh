@@ -22,12 +22,12 @@ firewall-cmd --list-all
 firewall-cmd --list-forward-ports
 
 #Switch to ubuntu2
-curl 192168.56.101:8080
+curl 192.168.56.101:8080
 
 #Back on rocky
 tail -n0 -f /var/log/httpd/access_log
 
 #Switch to ubuntu2
-curl 192168.56.101:8080
+curl 192.168.56.101:8080
 
 #Back on rocky
