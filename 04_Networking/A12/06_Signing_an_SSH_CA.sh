@@ -2,23 +2,23 @@
 
 sudo su -
 
-#We need to publish our pub key to the remote systems
-scp vagrant@192.168.56.101:/etc/ssh/ssh_host_rsa_key.pub alma.pub
+#We grab the pub key from the remote system
+scp vagrant@192.168.56.103:/etc/ssh/ssh_host_rsa_key.pub rocky.pub
 
-#Now we have the alma.pub key locally
+#Now we have the rocky.pub key locally
 ls
 
 #We are going to sign the key (-s its a signing request, -I the identity,-h its host key, -n the name, -V the validity)
-ssh-keygen -s server_ca -I alma -h -n 192.168.56.101 -V +52w alma.pub
+ssh-keygen -s server_ca -I rocky -h -n 192.168.56.103 -V +52w rocky.pub
 
-#We have now the alma-cert.pub key
+#We have now the rocky-cert.pub key
 ls
 
 #We copy the pub key
-scp alma-cert.pub vagrant@192.168.56.101:/tmp/ssh_host_rsa_key-cert.pub
+scp rocky-cert.pub vagrant@192.168.56.103:/tmp/ssh_host_rsa_key-cert.pub
 
-#SSH to alma
-ssh vagrant@192.168.56.101
+#SSH to rocky
+ssh vagrant@192.168.56.103
 
 #Start a root session
 sudo su -
@@ -50,7 +50,7 @@ exit
 #Lets edit the central known_hosts file
 vim /etc/ssh/ssh_known_hosts
 
-#We remove the alma entry (ideally, we shoud add the signed cert also ubuntu and opensuse)
+#We remove the rocky entry (ideally, we shoud add the signed cert also ubuntu2)
 
 #Save and exit
 
@@ -58,9 +58,9 @@ vim /etc/ssh/ssh_known_hosts
 exit
 
 #Test the SSH options
-ssh -o PreferredAuthentications=none 192.168.56.102
+ssh -o PreferredAuthentications=none 192.168.56.103
 
 #Start a ssh session
-ssh -v 192.168.56.102
+ssh -v 192.168.56.103
 
 #In the output scroll up to see: Server host certificate

@@ -1,4 +1,4 @@
-#Working on ubuntu in a root session
+#Working on ubuntu1 in a root session
 
 sudo su -
 
