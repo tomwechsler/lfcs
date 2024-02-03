@@ -1,4 +1,4 @@
-#Working on ubuntu
+#Working on ubuntu1
 
 #Change into .ssh
 cd .ssh
@@ -14,7 +14,7 @@ cat known_hosts
 rm known_hosts
 
 #Start a ssh session
-ssh 192.168.56.101
+ssh 192.168.56.103
 
 exit
 
@@ -22,7 +22,7 @@ exit
 cat known_hosts
 
 #No host checking
-ssh -o StrictHostKeyChecking=no 192.168.56.101
+ssh -o StrictHostKeyChecking=no 192.168.56.103
 
 exit
 
@@ -38,20 +38,20 @@ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null 192.168.56.103
 exit
 
 #No host checking
-ssh -o StrictHostKeyChecking=no 192.168.56.101
+ssh -o StrictHostKeyChecking=no 192.168.56.103
 
 exit
 
-#Rebuild the alma system - this does cause an message for the new ssh session
-#Switch to alma
-vagrant destroy alma
-vagrant up alma
+#Rebuild the rocky system - this does cause an message for the new ssh session
+#Switch to rocky
+vagrant destroy rocky
+vagrant up rocky
 
-#Back on Ubuntu
-ssh 192.168.56.101
+#Back on Ubuntu1
+ssh 192.168.56.103
 
 #Change the config
-ssh-keygen -R 192.168.56.101
+ssh-keygen -R 192.168.56.103
 
 #Set the options in a config file
 vim config
@@ -66,7 +66,7 @@ Host 192.168.56.*
 rm known_hosts
 
 #Start a session
-ssh 192.168.56.101
+ssh 192.168.56.103
 
 #Show the known_hosts file (nothing as expected)
 cat known_hosts

@@ -12,12 +12,12 @@ ssh -o PreferredAuthentications=none 192.168.56.102
 #Create a password for the vagrant account
 sudo passwd vagrant
 
-#Switch to opensuse
+#Switch to ubuntu2
 
 #Create a password for the vagrant account
 sudo passwd vagrant
 
-#Switch to alma
+#Switch to rocky
 
 #Create a password for the vagrant account
 sudo passwd vagrant
