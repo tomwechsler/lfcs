@@ -11,11 +11,11 @@ ssh-keyscan 192.168.56.101
 ssh-keyscan -t ecdsa 192.168.56.101
 
 #Now we store the key in a central store (-a to append)
-ssh-keyscan -t ecdsa 192.168.56.101 | sudo tee -a /etc/ssh/ssh_known_hosts
+ssh-keyscan -t ecdsa 192.168.56.103 | sudo tee -a /etc/ssh/ssh_known_hosts
 
 ssh-keyscan -t ecdsa 192.168.56.102 | sudo tee -a /etc/ssh/ssh_known_hosts
 
-ssh-keyscan -t ecdsa 192.168.56.103 | sudo tee -a /etc/ssh/ssh_known_hosts
+ssh-keyscan -t ecdsa 192.168.56.101 | sudo tee -a /etc/ssh/ssh_known_hosts
 
 #We do not have a known_hosts file
 ls
