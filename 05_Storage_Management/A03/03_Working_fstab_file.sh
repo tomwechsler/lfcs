@@ -32,7 +32,7 @@ man fstab
 #List the block devices
 lsblk -f
 
-#Use the mount command
+#Use the mount command (to proof the fstab file is correct)
 sudo mount -a
 
 #List the block devices
