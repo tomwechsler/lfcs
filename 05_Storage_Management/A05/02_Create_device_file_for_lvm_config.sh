@@ -2,6 +2,13 @@
 
 sudo -i
 
+#We create some new files
+fallocate -l 500M /root/disk2 
+fallocate -l 500M /root/disk3
+
+#What do we have
+ls -lh disk*
+
 #Create a variable with the new loop device infos
 disk=$(losetup -f /root/disk2 --show) #-f = losetup will find an available loop device
 

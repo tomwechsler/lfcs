@@ -48,7 +48,7 @@ mount -a
 quotaon -vua #-v = verbose, -u = user quota, -a = all filesystems
 
 #Create the quota
-equota vagrant
+edquota vagrant
 
 #Set the quota on blocks/soft/hard (20000 / 25000)
 

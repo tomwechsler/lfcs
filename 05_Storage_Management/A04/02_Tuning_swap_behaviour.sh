@@ -1,4 +1,4 @@
-#Working on ubuntu1 in a root session
+#Working on ubuntu2 in a root session
 
 #The swappiness range goes from 0 to 100 (default is 60). 0 = No swapping; 100 = Aggressive Swapping
 
