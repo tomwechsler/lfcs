@@ -11,7 +11,6 @@ vgcreate -v -s8K vg1 ${disk}p1 #-s = Sets the physical extent size on physical v
 #Show the backup of the metadata
 cat /etc/lvm/backup/vg1
 
-
 #Display the physical volumes and volume group
 pvdisplay #PE Size is set to 8K
 
