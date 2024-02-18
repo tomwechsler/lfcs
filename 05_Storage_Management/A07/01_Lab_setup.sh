@@ -4,15 +4,15 @@
 mkdir luks
 cd luks
 
-#Update the box
-vagrant box update
-
 #Create the new Vagrantfile
 vim Vagrantfile
 
 #Copy the content from the example
 
 #Save and exit
+
+#Update the box
+vagrant box update
 
 #Create a new VM
 VAGRANT_EXPERIMENTAL=disks vagrant up
@@ -21,4 +21,4 @@ VAGRANT_EXPERIMENTAL=disks vagrant up
 vagrant ssh -c lsblk
 
 #SSH into the VM
-vagrant ssh ubuntu1
+vagrant ssh
