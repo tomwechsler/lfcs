@@ -14,7 +14,7 @@ sudo vim /etc/default/nfs-kernel-server
 #Save and exit
 
 #Restart the service
-systemctl restart nfs-config nfs-kernel-server
+sudo systemctl restart nfs-config nfs-kernel-server
 
 #Check the ports again
 ss -ntl
