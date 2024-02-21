@@ -12,9 +12,14 @@ sudo exportfs -r
 
 sudo exportfs
 
+#SWITCH TO ROCKY
+
+#Install the nfs client (Rocky Linux)
+sudo dnf install -y nfs-utils
+
 #SWITCH TO UBUNTU1
 
-#Install the nfs client
+#Install the nfs client (Ubuntu)
 sudo apt install -y nfs-common
 
 #Mount the export
