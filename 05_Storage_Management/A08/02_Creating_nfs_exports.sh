@@ -3,7 +3,13 @@
 #Create an export
 sudo vim /etc/exports
 
-#/home 192.168.56.101(rw,root_squash,no_subtree_check,sync)
+#/home 192.168.56.0/24(rw,root_squash,no_subtree_check,sync)
+
+#rw allows read and write access.
+#root_squash converts root accesses into accesses of a non-privileged user.
+#no_subtree_check improves performance by skipping certain checks.
+#sync ensures immediate saving of changes, which is safer but can be slower.
+
 
 #Save and exit
 
