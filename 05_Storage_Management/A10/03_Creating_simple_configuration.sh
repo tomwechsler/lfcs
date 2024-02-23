@@ -1,7 +1,7 @@
 #Working on ubuntu1
 
 #Display the man page for the 'targets' configuration file format (search for examples)
-man 5 targets
+man 5 targets.conf
 
 #Open the '/etc/tgt/conf.d/my.conf' file in the vim text editor
 sudo vim /etc/tgt/conf.d/my.conf
@@ -15,8 +15,6 @@ sudo vim /etc/tgt/conf.d/my.conf
     # defaults to ALL if no "initiator-address" is specified
     #initiator-address 192.168.1.2
 </target>
-
-
 
 #Restart the 'tgt' service to apply the changes
 sudo systemctl restart tgt
