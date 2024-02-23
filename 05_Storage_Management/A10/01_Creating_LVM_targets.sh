@@ -4,10 +4,10 @@
 lsblk
 
 #Create a new file named 'disk1' with a size of 1000MB
-sudo fallocate -l 1000M disk1
+sudo fallocate -l 1000M /root/disk1
 
 #Associate the loop device that is first free with 'disk1' and display the name of the loop device
-sudo losetup -f disk1 --show
+sudo losetup -f /root/disk1 --show
 
 #Create a new volume group named 'vg1' on the loop device '/dev/loop3'
 sudo vgcreate vg1 /dev/loop3
