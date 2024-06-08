@@ -29,4 +29,3 @@ sudo echo "8.8.8.8 google" >> /etc/hosts
 echo "8.8.8.8 google" | sudo tee -a /etc/hosts
 
 #This is also useful where we need to raise our privileges, standard redirection works with the right of the user that opened the shell
-
