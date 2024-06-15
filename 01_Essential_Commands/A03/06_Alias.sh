@@ -39,4 +39,3 @@ unalias cpi
 
 #Display the aliases for the current user
 alias
-
