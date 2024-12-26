@@ -39,11 +39,11 @@ mount -t ext4
 mount -t xfs #There is no acl mount option needed, xfs supports acl by default
 
 
-The control of permissions for access to directories and files originally works as follows:
-A resource (file or directory) can only have an owner in the sense of a user and an owner group. 
-Based on these two assignments, authorizations can be assigned that only relate to reading, writing and executing. 
-A further assignment of rights can of course be applied to others, i.e. all others. Because all of this is the case, 
-it makes no sense under Linux to be a member of several security groups at the same time
+#The control of permissions for access to directories and files originally works as follows:
+#A resource (file or directory) can only have an owner in the sense of a user and an owner group. 
+#Based on these two assignments, authorizations can be assigned that only relate to reading, writing and executing. 
+#A further assignment of rights can of course be applied to others, i.e. all others. Because all of this is the case, 
+#it makes no sense under Linux to be a member of several security groups at the same time
 
-ACLs are access control lists that can contain several users and security groups in order to grant each of these 
-users and groups a set of authorizations for the respective resource.
+#ACLs are access control lists that can contain several users and security groups in order to grant each of these 
+#users and groups a set of authorizations for the respective resource.

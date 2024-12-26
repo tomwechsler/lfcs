@@ -4,7 +4,7 @@
 getsebool -a
 
 #semange command is not recognized, it might be a typo for semanage
-semanage
+sudo semanage
 
 #Install the policycoreutils, setools, setools-console, and setroubleshoot packages
 sudo dnf install -y policycoreutils setools setools-console setroubleshoot
