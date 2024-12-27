@@ -10,5 +10,5 @@ file $(which ansible)
 
 ansible --version
 
-Although Ansible is part of the standard repositories, it is an early version, to install a later
-version of Ansible we can add in the Ansible repository to Ubuntu 20.04.
+#Although Ansible is part of the standard repositories, it is an early version, to install a later
+#version of Ansible we can add in the Ansible repository to Ubuntu 20.04.
